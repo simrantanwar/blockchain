@@ -1,0 +1,11 @@
+.icons
+{
+    margin-top: -95px;
+}
+.btn-outline-primary
+{
+    width: 207px;
+    height: 46px;
+    box-shadow: 0 2px 3px blue;
+    border-radius: 10px;
+}
