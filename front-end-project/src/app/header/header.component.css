@@ -32,11 +32,11 @@ span.nav-link{
 
  }
  
-.nav-link{
+.link{
     position: relative;
   }
   
-  .nav-link:after{
+  .link:after{
     content: '';
     position: absolute;
     width: 0; height: 2px;
@@ -48,7 +48,7 @@ span.nav-link{
     -webkit-transition: width .2s ease;
   }
    
-  .nav-link:hover:after{
+  .link:hover:after{
     width: 100%;
     left: 0;
     background:dodgerblue;
