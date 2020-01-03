@@ -47,3 +47,35 @@
 }
 
 .vl-btn{}
+
+.form-height{
+    margin-top: 63px; width:100%;height: 400px;padding-top: 50px;
+}
+@media(max-width:768px){
+.form-height{
+    height: 545px;
+}
+}
+
+.view-div{
+    top:-375px;
+    position: relative;
+}
+.label-color{
+    color: white;
+}
+@media(max-width:1018px){
+    .view-div{
+       top:-200px;
+    }
+    }
+
+    @media(max-width:496px){
+        .view-div{
+           top:100px;           
+        }
+        .label-color{
+            color: black;
+        }
+        }
+
