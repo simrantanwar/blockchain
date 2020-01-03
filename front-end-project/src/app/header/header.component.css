@@ -1,0 +1,57 @@
+.main-continer{
+    position: absolute;
+    top: 2rem;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 8px;
+    z-index: 1;
+
+}
+
+.contents{
+    justify-content: flex-end;
+}
+
+.logo{
+    max-height: 3rem;
+}
+ .navbar {
+     padding-top: 1px;
+     padding-bottom: 1px;
+
+ }
+ a.nav-nav-link:hover{
+     color: dodgerblue!important;
+ }
+ .nav-item.active a{
+    color: dodgerblue!important;
+ }
+
+span.nav-link{
+     transition-delay: 2s;
+
+ }
+ 
+.nav-link{
+    position: relative;
+  }
+  
+  .nav-link:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: dodgerblue;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+  }
+   
+  .nav-link:hover:after{
+    width: 100%;
+    left: 0;
+    background:dodgerblue;
+  }
+  
+  

@@ -1,0 +1,29 @@
+<div class="card" style="width: 21rem; text-align: center;">
+    
+      <h5 class="card-title" style="color: rgb(73, 69, 69);">Contact Us</h5>
+      <small class="card-text"  style="color: rgb(73, 69, 69);">How can we help you?</small>
+      <form #userform="ngForm">
+      <div class="form-group" style=" margin-top: -13">
+        <input  type="text"   name="fname" [(ngModel)]="name" #firstname="ngModel" [class.is-invalid]="firstname.invalid && firstname.touched" required placeholder="Your name"  minlength="3" maxlength="32" class="form-control" style="text-align: center;     margin-top: -13; font-size: 14px;">
+    <small class="text-danger" [class.d-none]="firstname.valid || firstname.untouched">Name is required & it should have minimum 3 letters</small>
+    
+    </div>
+    <div class="form-group">
+        <input type="email" name="femail" [(ngModel)]="email" #emaill="ngModel" [class.is-invalid]="emaill.invalid && emaill.touched" required placeholder="Your email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" style="text-align: center;     margin-top: -13px; font-size: 14px;">
+        <small class="text-danger" [class.d-none]="emaill.valid || emaill.untouched">Email is required & it should be valid</small>
+    </div>
+    <div class="form-group">
+        <input type="text" name="company" [(ngModel)]="company"  required placeholder="Company" class="form-control" style="text-align: center;     margin-top: -13px; font-size: 14px;">       
+    </div>
+    <div class="form-group">
+        <input type="text" name="subject" maxlength="15" [(ngModel)]="subject"  required placeholder="Your Subject" class="form-control" style="text-align: center;     margin-top: -13px; font-size: 14px;">       
+
+    </div>
+    <div class="form-group">
+        <textarea name="message" minlength="30" maxlength="150"  required placeholder="Your Message" class="form-control" style="text-align: center;     margin-top: -13px; font-size: 14px;"></textarea>
+    </div>
+    <button type="submit" [disabled]="userform.form.invalid" class="btn btn-primary" style="    margin-top: -11px" (click)="submit()">Submit</button>
+
+</form>
+    </div>
+  

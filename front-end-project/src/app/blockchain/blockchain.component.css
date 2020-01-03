@@ -9,3 +9,41 @@
     box-shadow: 0 2px 3px blue;
     border-radius: 10px;
 }
+
+.header-div{
+    width: 100%;
+    height:300px;
+    
+}
+
+.bit-logo{
+    z-index: 0;
+   height: 259px;
+   /* position: absolute;
+   top: 93px;
+   right: 0px; */
+}
+
+@media(max-width:631px){
+    .bit-logo{
+        width:100%
+    }
+}
+@media(max-width:500px){
+    .bit-logo{   
+       position: absolute;
+       left: 1px;
+       opacity: .5;
+    }
+}
+
+.title-logo{
+    justify-content: space-between;
+    top: 6rem;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    color: white;
+}
+
+.vl-btn{}
